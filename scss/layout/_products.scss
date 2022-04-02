@@ -1,0 +1,28 @@
+.products__title {
+  margin-bottom: 20px;
+}
+
+.products__list {
+  @include desktop {
+    @include flexAlign($justify: flex-start);
+    flex-wrap: wrap;
+
+    margin-top: -16px;
+    margin-left: -16px;
+  }
+}
+
+.products__item {
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  @include desktop {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+    margin-top: 16px;
+    margin-left: 16px;
+
+    flex-basis: calc(#{(100% / 4)} - 16px);
+  }
+}

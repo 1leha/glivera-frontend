@@ -4,13 +4,10 @@
 
 .stars__item {
   &:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 3px;
   }
 }
 
 .stars__icon {
   color: var(--color-star);
-  &--colored {
-    color: var(--color-star-active);
-  }
 }

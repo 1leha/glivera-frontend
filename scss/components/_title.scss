@@ -1,6 +1,12 @@
 .title {
   @include font(34, 42, 700, 0);
-  text-align: center;
+  text-align: left;
+  text-transform: uppercase;
 
   color: var(--color-primary);
+
+  &--underline {
+    text-decoration: underline;
+    color: var(--color-third);
+  }
 }

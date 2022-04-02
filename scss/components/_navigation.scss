@@ -2,7 +2,11 @@
   display: none;
   border-bottom: 1px solid var(--color-links);
 
-  @include tablet{
+  @include tablet {
+    display: block;
+  }
+
+  @include desktop {
     display: block;
   }
 }

@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Установка шрифтов -->
-    <link rel="stylesheet" href="./fonts/stylesheet.css" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Нормалайзер из конспекта Саши Репеты -->
     <link
       rel="stylesheet"
@@ -39,7 +43,7 @@
           </ul>
         </nav>
 
-        <div class="mobile-menu-wrapper">
+        <div class="mobile-menu-wrapper" data-mobile-menu>
           <div class="mobile-menu" data-mobile-menu>
             <div class="mobile-menu__container">
               <ul class="mobile-menu__list">
@@ -61,7 +65,104 @@
       </div>
     </header>
 
-    <main class="main"></main>
+    <main class="main">
+      <section class="section products">
+        <div class="container">
+          <h1 class="products__title title">
+            not <span class="title title--underline">old</span> but
+            <span class="title title--underline">vintage</span>
+          </h1>
+          <ul class="products__list">
+            <li class="products__item">
+              <article class="card">
+                <h2 class="card__title visually-hidden">Vintage Typewriter</h2>
+                <div class="card__thumb">
+                  <a href="" class="card__link">
+                    <img
+                      class="card__image"
+                      srcset="./img/vintage-typewriter.jpg 1x, ./img/vintage-typewriter@2x.jpg 2x"
+                      src="./img/vintage-typewriter.jpg"
+                      alt="Vintage Typewriter"
+                      width="227"
+                      height="224"
+                    />
+                  </a>
+                </div>
+                <div class="card__wrapper">
+                  <a class="card__description" href="">
+                    Vintage Typewriter to post awesome stories about UI design and webdev.
+                  </a>
+                  <a class="card__price" href="">$49.50</a>
+                  <div class="card__info">
+                    <p class="card__text">1258 bids, 359 watchers</p>
+                    <p class="card__text card__text--bold">$5.95 for shipping</p>
+                  </div>
+                  <div class="card__footer card-footer">
+                    <a class="card-footer__item grade" href="">
+                      <ul class="grade__item stars">
+                        <li class="stars__item">
+                          <svg class="stars__icon" width="11" height="10">
+                            <use href="./img/icons.svg#star-filled"></use>
+                          </svg>
+                        </li>
+
+                        <li class="stars__item">
+                          <svg class="stars__icon" width="11" height="10">
+                            <use href="./img/icons.svg#star-filled"></use>
+                          </svg>
+                        </li>
+
+                        <li class="stars__item">
+                          <svg class="stars__icon" width="11" height="10">
+                            <use href="./img/icons.svg#star-filled"></use>
+                          </svg>
+                        </li>
+
+                        <li class="stars__item">
+                          <svg class="stars__icon" width="11" height="10">
+                            <use href="./img/icons.svg#star-half"></use>
+                          </svg>
+                        </li>
+
+                        <li class="stars__item">
+                          <svg class="stars__icon" width="11" height="10">
+                            <use href="./img/icons.svg#star-empty"></use>
+                          </svg>
+                        </li>
+                      </ul>
+                      <span class="grade__item grade-number">3.5</span>
+                    </a>
+
+                    <div class="card-footer__item">
+                      <label class="card-footer__label label">
+                        <input
+                          class="card-footer__checkbox-original visually-hidden"
+                          type="checkbox"
+                          name="watch"
+                        />
+                        <span class="card-footer__checkbox-custom checkbox-custom">
+                          <svg class="checkbox-custom__icon" width="28" height="28">
+                            <use
+                              class="checkbox-custom__uncheck"
+                              href="./img/icons.svg#heart-uncheck"
+                            ></use>
+                            <use
+                              class="checkbox-custom__check"
+                              href="./img/icons.svg#heart-check"
+                            ></use>
+                          </svg>
+                        </span>
+                        <span class="label__text">Watch</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer"></footer>
     <script src="./js/mob-menu.js"></script>

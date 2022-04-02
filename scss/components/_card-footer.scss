@@ -1,0 +1,74 @@
+.card-footer {
+  @include flexAlign();
+}
+
+.card-footer__item {
+  &:not(:last-child) {
+    margin-right: auto;
+  }
+}
+
+.grade {
+  @include flexAlign($justify: flex-start, $align: baseline);
+}
+
+.grade__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.grade-number {
+  display: block;
+  @include font(14, 22, 700, 0.01);
+
+  color: var(--color-fourth);
+}
+
+.label {
+  cursor: pointer;
+  @include flexAlign();
+  padding: 2px 12px 2px 4px;
+
+  //   width: 88px;
+  //   height: 32px;
+
+  @include font(14, 20, 500, 0.018);
+
+  color: var(--color-brand);
+
+  border: solid 1px #9dc2ff;
+  border-radius: 4px;
+
+  @include projTransitions(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-accent);
+  }
+}
+
+.label__text {
+  display: block;
+}
+
+.checkbox-custom {
+  color: var(--color-brand);
+  margin-right: 1px;
+
+  .card-footer__checkbox-original:checked + & .checkbox-custom__check {
+    display: inline-block;
+  }
+}
+
+.checkbox-custom__icon {
+  display: block;
+}
+
+.checkbox-custom__check {
+  display: none;
+}
+
+.checkbox-custom__uncheck {
+  display: inline-block;
+}
