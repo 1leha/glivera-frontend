@@ -1,0 +1,31 @@
+.language {
+  //   display: block;
+  @include flexAlign($justify: flex-start);
+
+  @include font(34, 42, 700, 0);
+}
+
+.language__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 1em;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 10%;
+      left: 100%;
+
+      transform: translateX(0.4em);
+      width: 0.2em;
+      height: 1.1em;
+      background-color: var(--color-primary);
+    }
+  }
+}
+
+.language__link {
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+  }
+}

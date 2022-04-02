@@ -1,0 +1,17 @@
+.app {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.app__icon {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+.app__name {
+  margin-bottom: 40px;
+
+  @include font(14, 17, 700, 0);
+
+  color: var(--color-third);
+}

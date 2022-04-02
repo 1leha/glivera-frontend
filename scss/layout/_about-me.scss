@@ -1,0 +1,9 @@
+.about-me__text {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.about-me__title {
+  margin-bottom: 30px;
+}

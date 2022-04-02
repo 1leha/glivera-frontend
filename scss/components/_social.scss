@@ -1,0 +1,29 @@
+.social__list {
+  @include flexAlign();
+}
+
+.social__item {
+  width: 12px;
+  height: 12px;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.social__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  @include flexAlign();
+
+  color: var(--color-white);
+
+  @include projTransitions(color);
+
+  &:hover,
+  &:focus {
+    color: var(--color-brand);
+  }
+}

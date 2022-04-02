@@ -1,0 +1,13 @@
+.skills__title {
+  margin-bottom: 50px;
+}
+
+.skills__text {
+  margin-bottom: 71px;
+}
+
+.skills__item {
+  &:not(:last-child) {
+    margin-bottom: 81px;
+  }
+}

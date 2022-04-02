@@ -1,0 +1,16 @@
+.stars {
+  @include flexAlign();
+}
+
+.stars__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.stars__icon {
+  color: var(--color-star);
+  &--colored {
+    color: var(--color-star-active);
+  }
+}

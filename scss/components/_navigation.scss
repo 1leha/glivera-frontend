@@ -1,0 +1,39 @@
+.navigation {
+  display: none;
+  border-bottom: 1px solid var(--color-links);
+
+  @include tablet{
+    display: block;
+  }
+}
+
+.navigation__list {
+  @include flexAlign($justify: space-between);
+}
+
+.navigation__item {
+  &:not(:last-child) {
+    margin-right: 48px;
+  }
+}
+
+.navigation__link {
+  display: block;
+  padding-top: 33px;
+  padding-bottom: 32px;
+
+  @include font(18, 22, 700, 0);
+
+  @include projTransitions(color);
+
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+  }
+
+  &--active {
+    @include font(12, 14, 700, 0.02);
+
+    color: var(--color-brand);
+  }
+}

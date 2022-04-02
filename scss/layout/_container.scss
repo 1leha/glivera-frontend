@@ -1,0 +1,16 @@
+.container {
+  min-width: 300px;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  @include tablet {
+    max-width: 1000px;
+  }
+
+  // overflow: hidden;
+
+  // position: relative;
+}

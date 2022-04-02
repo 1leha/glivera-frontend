@@ -1,0 +1,32 @@
+:root {
+  /* Переменные основных цветов */
+  --color-brand: #00a4e5;
+  --color-primary: #000000;
+  --color-secondary: #e6e6e6;
+  --color-third: #828282;
+  // --color-fourth: #141a20;
+  // --color-fifth: #bdbdbd;
+
+  --color-star-active: #000000;
+  --color-star: #e5e5e5;
+
+  --color-white: #ffffff;
+  // --color-black: #000000;
+  // --color-white40: rgba(255, 255, 255, 0.4);
+
+  --color-bg: #e5e5e5;
+
+  /* Переменные цветов активности */
+  --color-accent: #000000;
+  --color-links: #828282;
+
+  /* Шрифты */
+  --primary-font: 'Gilroy', sans-serif;
+  // --secondary-font: 'Bebas Neue', cursive;
+
+  /* ЭФФЕКТЫ */
+  --transition-time: 250ms;
+  --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --color-current: currentColor;
+}
