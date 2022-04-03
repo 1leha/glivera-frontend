@@ -1,5 +1,12 @@
 .products__title {
   margin-bottom: 20px;
+
+  @include tablet {
+    margin-bottom: 50px;
+  }
+  @include desktop {
+    margin-bottom: 50px;
+  }
 }
 
 .products__list {
@@ -16,7 +23,12 @@
   &:not(:last-child) {
     margin-bottom: 16px;
   }
+
   @include desktop {
+    @media (max-width: 1024px) {
+      flex-basis: calc(#{(100% / 3)} - 16px);
+    }
+
     &:not(:last-child) {
       margin-bottom: 0;
     }

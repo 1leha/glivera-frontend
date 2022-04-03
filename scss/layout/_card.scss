@@ -1,8 +1,4 @@
 .card {
-  /* !удалить */
-  outline: 1px solid green;
-  background-color: lightblue;
-  //   width: 259px;
   padding: 16px;
 
   border-radius: 8px;
@@ -22,13 +18,9 @@
 }
 
 .card__thumb {
-  /* !удалить */
-  outline: 1px solid tomato;
-  background-color: peachpuff;
-
   margin-bottom: 12px;
-
   border-radius: 8px;
+
   overflow: hidden;
 
   @include tablet {

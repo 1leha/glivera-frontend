@@ -2,11 +2,22 @@
   padding-top: 70px;
   padding-bottom: 70px;
 
+  background-color: var(--color-bg);
+
   &--no-padding-top {
     padding-top: 0;
   }
 
   &--colored {
     background-color: var(--color-secondary);
+  }
+
+  @include tablet {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @include desktop {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }

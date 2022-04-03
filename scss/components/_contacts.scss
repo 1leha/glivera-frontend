@@ -1,0 +1,46 @@
+.contacts {
+  @include flexAlign($justify: flex-start, $align: baseline);
+}
+
+.contacts__item {
+  @include font(12, 18, 400, 0);
+
+  color: var(--color-links);
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.contacts__name {
+  display: block;
+
+  padding-top: 33px;
+  padding-bottom: 32px;
+
+  @include font(12, 18, 400, 0);
+
+  color: var(--color-links);
+}
+
+.contacts__link {
+  display: block;
+  padding-top: 33px;
+  padding-bottom: 32px;
+
+  @include font(12, 18, 400, 0);
+
+  color: var(--color-links);
+
+  @include projTransitions(color);
+
+  &:hover,
+  &:focus {
+    color: var(--color-brand);
+  }
+
+  &--active {
+    @include font(12, 14, 700, 0.02);
+
+    color: var(--color-brand);
+  }
+}

@@ -1,0 +1,36 @@
+.portfolio__title {
+  margin-bottom: 20px;
+
+  @include tablet {
+    margin-bottom: 50px;
+  }
+  @include desktop {
+    margin-bottom: 50px;
+  }
+}
+
+.portfolio__item {
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  @include font(16, 24, 400, 0);
+}
+
+.portfolio__link {
+  @include font(18, 24, 500, 0);
+
+  color: var(--color-primary);
+
+  @include projTransitions(color);
+
+  &:hover,
+  &:focus {
+    color: var(--color-brand);
+  }
+}
+
+.portfolio__ps {
+  padding-top: 50px;
+  @include font(22, 34, 700, 0);
+}

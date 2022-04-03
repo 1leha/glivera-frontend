@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Установка шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Нормалайзер из конспекта Саши Репеты -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Glivera frontend test</title>
+  </head>
+  <body>
+    <header class="header">
+      <button type="button" class="mobile-menu-btn" data-mobile-button>
+        <span class="mobile-menu-btn__item"></span>
+        <span class="mobile-menu-btn__item"></span>
+        <span class="mobile-menu-btn__item"></span>
+      </button>
+      <div class="container">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="index.html" class="navigation__link">Тест</a>
+            </li>
+
+            <li class="navigation__item">
+              <a href="about-me.html" class="navigation__link">Про мене</a>
+            </li>
+            <li class="navigation__item">
+              <a href="" class="navigation__link navigation__link--active">Портфоліо</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-menu-wrapper" data-mobile-menu>
+          <div class="mobile-menu">
+            <div class="mobile-menu__container">
+              <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                  <a href="index.html" class="mobile-menu__link">Тест</a>
+                </li>
+
+                <li class="mobile-menu__item">
+                  <a href="about-me.html" class="mobile-menu__link">Про мене</a>
+                </li>
+
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link mobile-menu__link--active">Портфоліо</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a
+                    href="mailto:alexey.lisovoy2011@gmail.com"
+                    class="mobile-menu__link mobile-menu__link--small"
+                    >alexey.lisovoy2011@gmail.com</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="tel:+380509583572" class="mobile-menu__link mobile-menu__link--small"
+                    >+38 050 958 35 72</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section portfolio">
+        <div class="container">
+          <h1 class="title portfolio__title">Portfolio</h1>
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <a href="https://github.com/1leha?tab=repositories" class="portfolio__link"
+                >Мій GitHub</a
+              >
+              <p class="portfolio__description">Посилання на мої репозиторії на GitHub</p>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="https://1leha.github.io/goit-markup-hw-08/" class="portfolio__link"
+                >Мій навчальний проєкт з верстки в GoIT</a
+              >
+              <p class="portfolio__description">
+                Навчальний проект включає адаптивну верстку для телефона, планшета, десктопа.
+                Використана методологія БЕМ. Використано препроцесор SASS (scss). Є модалка з
+                формою. Є мобільне меню.
+              </p>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="https://1leha.github.io/le-corte/" class="portfolio__link"
+                >Лендінг вииного бутіка Le-corte</a
+              >
+              <p class="portfolio__description">
+                Простий лендінг вииного бутіка без адаптиву. Використовував БЕМ, SASS.
+              </p>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="https://1leha.github.io/beauty-store/" class="portfolio__link"
+                >Лендінг магазину обладнання для салонів краси Beauty</a
+              >
+              <p class="portfolio__description">
+                Простий лендінг магазину обладнання для салонів краси без адаптиву. Використовував
+                БЕМ, SASS.
+              </p>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="https://1leha.github.io/konstrukt/" class="portfolio__link"
+                >Лендінг будівельної компанії Konstrukt</a
+              >
+              <p class="portfolio__description">
+                Лендінг будівельної компанії без адаптиву. Використовував БЕМ, SASS.
+              </p>
+            </li>
+
+            <li class="portfolio__item">
+              <a href="https://1leha.github.io/dn-portfolio/" class="portfolio__link"
+                >Сайт-візитка</a
+              >
+              <p class="portfolio__description">
+                Сайт-візитка з адаптивом. Використовував БЕМ, SASS. Робота ще не завершена, але
+                трохи адаптиву вже можна подивитись.
+              </p>
+            </li>
+          </ul>
+          <p class="portfolio__ps">PS: Усі макети були зверстані з навчальною метою.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer__contacts contacts">
+          <li class="contacts__item">
+            <span class="contacts__name">&#169; Олксій Лісовий </span>
+          </li>
+          <li class="contacts__item">
+            <a href="mailto:alexey.lisovoy2011@gmail.com" class="contacts__link"
+              >alexey.lisovoy2011@gmail.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+380509583572" class="contacts__link">+38 050 958 35 72</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./js/mob-menu.js"></script>
+  </body>
+</html>

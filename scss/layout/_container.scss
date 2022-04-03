@@ -7,18 +7,12 @@
 
   @include mobile {
     max-width: 350px;
-    // min-width: 300px;
   }
   @include tablet {
     max-width: 767px;
-    // min-width: 300px;
   }
 
   @include desktop {
-    // min-width: 768px;
     max-width: 1132px;
-    /* !удалить */
-    outline: 1px solid red;
-    background-color: lightcyan;
   }
 }

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Установка шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Нормалайзер из конспекта Саши Репеты -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Glivera frontend test</title>
+  </head>
+  <body>
+    <header class="header">
+      <button type="button" class="mobile-menu-btn" data-mobile-button>
+        <span class="mobile-menu-btn__item"></span>
+        <span class="mobile-menu-btn__item"></span>
+        <span class="mobile-menu-btn__item"></span>
+      </button>
+      <div class="container">
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="index.html" class="navigation__link">Тест</a>
+            </li>
+
+            <li class="navigation__item">
+              <a href="" class="navigation__link navigation__link--active">Про мене</a>
+            </li>
+            <li class="navigation__item">
+              <a href="portfolio.html" class="navigation__link">Портфоліо</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-menu-wrapper" data-mobile-menu>
+          <div class="mobile-menu">
+            <div class="mobile-menu__container">
+              <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                  <a href="index.html" class="mobile-menu__link">Тест</a>
+                </li>
+
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link mobile-menu__link--active">Про мене</a>
+                </li>
+
+                <li class="mobile-menu__item">
+                  <a href="portfolio.html" class="mobile-menu__link">Портфоліо</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a
+                    href="mailto:alexey.lisovoy2011@gmail.com"
+                    class="mobile-menu__link mobile-menu__link--small"
+                    >alexey.lisovoy2011@gmail.com</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="tel:+380509583572" class="mobile-menu__link mobile-menu__link--small"
+                    >+38 050 958 35 72</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="section about-me">
+        <div class="container">
+          <h1 class="title about-me__title">Who am I?</h1>
+          <p class="text about-me__text">
+            Свій кар'єрний шлях я починав із верстки газетних періодичних видань у видавничому домі
+            Арт-Мозаїка. Пропрацювавши там близько 7 років вирішив спробувати себе в інших галузях,
+            пов'язаних із дизайном та друком.
+          </p>
+          <p class="text about-me__text">
+            Наступним місцем моєї кар'єри була «Фабрика етикетки МІККО». Посада: інженер
+            додрукарської підготовки. Основним моїм завданням була перевірка макетів етикеток на
+            технічні помилки дизайну та адаптація їх до друку на машинах компанії. Попрацювавши
+            півроку – зрозумів, що це не моє.
+          </p>
+          <p class="text about-me__text">
+            У той самий період життя захоплювався фотографією. Був членом харківського фото-клуба.
+            Вирішив пробувати себе як весільний фотограф. Було цікаво, проте виконавши 6-7
+            замовлень, прийшло розуміння, що хобі іноді має залишатися хобі. ))
+          </p>
+          <p class="text about-me__text">
+            Мені запропонували попрацювати регіональним представником із продажу ліцензійного
+            програмного забезпечення – я погодився. Пропрацював 2 роки. Багато ходив, багато
+            спілкувався, втомився, відмовився.
+          </p>
+          <p class="text about-me__text about-me__text--small-margin">
+            Далі влаштувався на посаду QA-designer у «Рекламний холдинг Мегаполіс Плюс». Працюю у
+            цій компанії 11,5 років. До моїх завдань входить:
+          </p>
+          <ul class="about-me__list">
+            <li class="about-me__item">
+              перевірка рекламних макетів на їхню відповідність технічним вимогам конструкції;
+            </li>
+            <li class="about-me__item">адаптація макетів на різноманітні конструкції (ресайзи);</li>
+            <li class="about-me__item">обробка фото;</li>
+            <li class="about-me__item">написання технічних вимог до нових конструкцій;</li>
+            <li class="about-me__item">
+              технічний супровід та перевірка великих проектів брендування наземного транспорту та
+              метрополітену (станції та поїзди).
+            </li>
+          </ul>
+          <p class="text about-me__text">
+            Працюючи з великими проектами брендувань, зіткнувся з необхідністю автоматизації тонни
+            однотипних процесів. Результатом цього стали розроблені спочатку екшенси для фотошоп, а
+            коли функціонала екшансів стало не вистачати - написав ряд корисних JS-скриптів для
+            фотошоп. В результаті ряд процесів тривалістю 40-60 хвилин скоротилися до 2-3 хвилин.
+          </p>
+          <p class="text about-me__text">І найголовніше, що сам процес мені сподобався.</p>
+          <p class="text about-me__text">
+            Я почав вивчати верстку HTML та CSS. Спочатку самостійно, через 4 місяці – вирішив іти
+            на курси до компанії GoIT. Успішно закінчив модуль верстки. У зв'язку з бойовими діями –
+            перервав навчання.
+          </p>
+          <p class="text about-me__text">
+            Поки є можливість відточувати отримані навички та закріплювати знання – верстаю макети з
+            мережі для портфоліо. Але з радістю попробував би себе у комерційних проектах.
+          </p>
+          <p class="title about-me__text">Телефонуйте! Поспілкуємось!</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer__contacts contacts">
+          <li class="contacts__item">
+            <span class="contacts__name">&#169; Олксій Лісовий </span>
+          </li>
+          <li class="contacts__item">
+            <a href="mailto:alexey.lisovoy2011@gmail.com" class="contacts__link"
+              >alexey.lisovoy2011@gmail.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+380509583572" class="contacts__link">+38 050 958 35 72</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./js/mob-menu.js"></script>
+  </body>
+</html>
